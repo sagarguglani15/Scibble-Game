@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+#tools {
+    width: 100%;
+    position: relative;
+    bottom: 3%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+  #tools li {
+    width: 65px;
+    display: inline-block;
+    position: relative;
+  }
+  #tools li:not(:last-child) {
+    margin-right: 15px;
+  }
+  #tools a {
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer;
+  }
+  #tools a.active {
+    opacity: 0.35;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    cursor: default;
+  }
+  #tools a:hover {
+    color: #000;
+  }
+  #tools a:not(.active):hover .icon {
+    -webkit-box-shadow: 0px 6px 0px #000;
+    box-shadow: 0px 6px 0px #000;
+    top: -3px;
+    left: 0px;
+  }
+  #tools .icon {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    box-shadow: 0px 3px 0px #000;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    transition: all 0.15s;
+  }
+  #tools svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #tools span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 700;
+    margin-top: 8px;
+  }
+  
+
+
+.color li {
+    float: left;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border:1px solid #999;
+    text-align: center;
+    cursor: pointer
+}
+.size li {
+    float: left;
+    list-style: none;
+    width: 150px;
+    border:1px solid #999;
+    text-align: center;
+    cursor: pointer
+}
+.selectedColor{
+    border:2px solid #000 !important;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skribble</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="head">
+			<a href="index.html"><h1>Skribble</h1></a>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="formdiv">
+				<center>
+                    <!-- <form class="input"> -->
+                        <label ><b>Enter your name:</b></label>
+                        <input type="text" id="inp" name="name" placeholder="ex: sonic" required/><br/>
+                        <button class="btn">Join the game</button>
+                    <!-- </form> -->
+                </center>
+			</div>
+		</div>
+    </main>
+    <script>
+        window.onload=()=>{
+            let btn=document.querySelector('.btn')
+            btn.addEventListener('click',()=>{
+                let value = document.querySelector('#inp').value
+                localStorage.setItem('user_name', value)
+                window.location.href = '/game.html'
+            })
+        }
+    </script>
+</body>
+
+</html>
